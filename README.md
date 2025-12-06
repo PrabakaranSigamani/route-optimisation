@@ -1,5 +1,7 @@
 # Route Optimization & Visualization POC
 
+![Dashboard Screenshot](docs/dashboard-screenshot.png)
+
 ## 1. Business Use Case
 This project implements a **Vehicle Routing Problem (VRP)** solver designed for logistics and last-mile delivery optimization. It addresses the challenge of efficiently assigning delivery orders to a fleet of vehicles while adhering to real-world constraints.
 
