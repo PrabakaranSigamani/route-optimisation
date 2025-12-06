@@ -1,0 +1,9 @@
+services:
+  route-optimizer:
+    build: .
+    image: route-optimisation:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - OSRM_BASE_URL=http://router.project-osrm.org
+    restart: unless-stopped

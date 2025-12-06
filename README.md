@@ -79,3 +79,28 @@ graph TD
 
 ### Configuration
 *   **OSRM**: By default, it may point to a public OSRM server or localhost. Configure `osrm.baseUrl` in `application.properties`.
+
+## 5. Docker Deployment
+
+### Build and Run with Docker Compose
+1.  **Build and Start**:
+    ```bash
+    docker-compose up --build -d
+    ```
+    The application will be accessible at `http://localhost:8080`.
+
+2.  **Stop**:
+    ```bash
+    docker-compose down
+    ```
+
+### Manual Docker Build
+1.  **Build Image**:
+    ```bash
+    docker build -t route-optimizer .
+    ```
+
+2.  **Run Container**:
+    ```bash
+    docker run -p 8080:8080 -e OSRM_BASE_URL=http://router.project-osrm.org route-optimizer
+    ```
